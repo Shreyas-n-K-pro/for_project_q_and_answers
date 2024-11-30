@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+nav {
+    background: white;
+    border-bottom: 2px solid #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #2575fc;
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3rem;
+    animation: fadeIn 1s ease-out;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 1rem;
+    border-left: 5px solid #6a11cb;
+    padding-left: 10px;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+section ul li::before {
+    content: '➤';
+    margin-right: 10px;
+    color: #6a11cb;
+    font-size: 1.2rem;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    overflow-x: auto;
+    border-left: 5px solid #2575fc;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Interactive Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
