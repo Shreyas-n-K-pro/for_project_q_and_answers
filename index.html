@@ -15,6 +15,7 @@
         <ul>
             <li><a href="#nature-problems">Problems in Nature</a></li>
             <li><a href="#efficiency">Efficiency Measures</a></li>
+            <li><a href="#fundamental-techniques">Fundamental Techniques</a></li>
             <li><a href="#tree-structures">Tree Data Structures</a></li>
             <li><a href="#array-queries">Array Query Algorithms</a></li>
         </ul>
@@ -34,13 +35,44 @@
         </section>
         <section id="efficiency">
             <h2>2. Time and Space Efficiency</h2>
-            <p>Time-efficiency measures how long an algorithm takes to execute based on input size. Space-efficiency refers to the additional memory required. Both are crucial for designing sustainable solutions.</p>
+            <p>Time-efficiency is the amount of time the basic operation/algorithm takes to execute as a function of input size or its magnitude. 
+            Space-efficiency is the extra memory taken by the algorithm. 
+            Both are important for designing sustainable solutions.</p>
             <h3>Orders of Growth</h3>
             <p>The growth rates of algorithms are classified as:</p>
             <pre>O(1) < O(log(n)) < O(n) < O(n log(n)) < O(n²) < O(n³) < O(2ⁿ) < O(n!)</pre>
         </section>
+        <section id="fundamental-techniques">
+            <h2>3. Fundamental Techniques</h2>
+            <ul>
+                <li><strong>Decomposition:</strong> Break complex problems into smaller, manageable sub-problems for focused solutions.</li>
+                <li><strong>Pattern Recognition:</strong> Identify recurring patterns to generalize solutions and apply knowledge across domains.</li>
+                <li><strong>Abstraction:</strong> Focus on essential features while ignoring irrelevant details to simplify problem-solving.</li>
+                <li><strong>Traversal Techniques:</strong></li>
+                <ul>
+                    <li>Brave Traversal: Depth-first exploration (DFS).</li>
+                    <li>Cautious Traversal: Level-wise exploration (BFS).</li>
+                </ul>
+                <li><strong>Pruning:</strong> Eliminate unnecessary parts of a problem to improve efficiency (e.g., N-Queens problem).</li>
+                <li><strong>Lazy Propagation:</strong> Optimize range updates in data structures by deferring computations.</li>
+                <li><strong>Sliding Window:</strong> Efficiently analyze overlapping sub-arrays or sequences.</li>
+                <li><strong>Level Order Traversal:</strong> Explore tree nodes breadth-wise (used in BFS).</li>
+                <li><strong>Hierarchical Data:</strong> Organize data in parent-child relationships for efficient management (e.g., tree structures).</li>
+                <li><strong>Edge Relaxation:</strong> Update shortest path estimates in weighted graphs.</li>
+                <li><strong>Balancing and Rotations:</strong> Maintain balanced trees for optimal performance (e.g., AVL, Red-Black trees).</li>
+                <li><strong>Kleene Closure:</strong> Apply transitive properties for pathfinding and graph analysis.</li>
+                <li><strong>Pre-Computing:</strong> Store frequently used results to avoid redundant calculations (e.g., lookup tables).</li>
+                <li><strong>Parental Dominance:</strong> Maintain parent-child relationships for efficiency (e.g., heaps).</li>
+                <li><strong>Prefix and Suffix:</strong> Useful for string manipulation and pattern matching.</li>
+                <li><strong>Partitioning:</strong> Divide problems into smaller parts for efficient solutions (e.g., divide-and-conquer).</li>
+                <li><strong>Bit Manipulations:</strong> Perform low-level binary operations for optimized algorithms.</li>
+                <li><strong>Memoization:</strong> Store results of recursive calls to avoid redundant computations (dynamic programming).</li>
+                <li><strong>Invariants:</strong> Ensure conditions remain constant to validate algorithms.</li>
+                <li><strong>Shortest Path Trees:</strong> Represent shortest paths in graphs for routing and optimization tasks.</li>
+            </ul>
+        </section>
         <section id="tree-structures">
-            <h2>3. Tree Data Structures</h2>
+            <h2>4. Tree Data Structures</h2>
             <p>Hierarchical data structures help solve and optimize various problems:</p>
             <ul>
                 <li><strong>Tree:</strong> Basic structure for relationships.</li>
@@ -53,7 +85,7 @@
             </ul>
         </section>
         <section id="array-queries">
-            <h2>4. Array Query Algorithms</h2>
+            <h2>5. Array Query Algorithms</h2>
             <p>Array query algorithms handle range queries and updates effectively:</p>
             <ul>
                 <li><strong>Lookup Table:</strong> Precomputes results for quick retrieval (O(1) time).</li>
