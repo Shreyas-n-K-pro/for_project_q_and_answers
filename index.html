@@ -85,31 +85,32 @@
             </ul>
         </section>
         <section id="array-queries">
-            <h2>4. Array Query Algorithms</h2>
-            <p>Array query algorithms handle range queries and updates effectively by using efficient data structures:</p>
-            <ul>
-                <li>
-                    <strong>Lookup Table:</strong>
-                    <p><strong>Principle:</strong> Precomputes answers for different inputs and stores them in a table. When queried, answers are retrieved in O(1) time using a 2D matrix.</p>
-                    <p><strong>Application:</strong> Useful when we need to answer multiple queries very quickly after an initial precomputation (e.g., computing factorials).</p>
-                </li>
-                <li>
-                    <strong>Segment Tree:</strong>
-                    <p><strong>Principle:</strong> A tree-like data structure that divides the array into smaller parts (segments) and stores information about them. It can quickly answer range queries (like sum or minimum) and also update elements.</p>
-                    <p><strong>Application:</strong> Used in problems involving arrays to answer range queries, such as in games or dynamic programming problems.</p>
-                </li>
-                <li>
-                    <strong>Sparse Table:</strong>
-                    <p><strong>Principle:</strong> Optimized for answering range queries where no updates are needed. It uses precomputation to quickly find minimums or maximums over a range.</p>
-                    <p><strong>Application:</strong> Ideal for answering static range queries efficiently (e.g., finding the minimum or maximum over a range).</p>
-                </li>
-                <li>
-                    <strong>Binary Indexed Tree (Fenwick Tree):</strong>
-                    <p><strong>Principle:</strong> A binary tree structure that helps quickly compute prefix sums (sum of elements from the start of the array to a specific index) and update elements in the array.</p>
-                    <p><strong>Application:</strong> Used in problems requiring efficient updates and prefix sum queries, like stock price tracking.</p>
-                </li>
-            </ul>
-        </section>
+    <h2>4. Array Query Algorithms</h2>
+    <p>Array query algorithms handle range queries and updates effectively by using efficient data structures:</p>
+    <ul>
+        <li>
+            <strong>Lookup Table:</strong>
+            <p><strong>Principle:</strong> Precomputes answers for different inputs and stores them in a table. When queried, answers are retrieved in O(1) time using a 2D matrix.</p>
+            <p><strong>Application:</strong> Useful when we need to answer multiple queries very quickly after an initial precomputation (e.g., computing factorials).</p>
+        </li>
+        <li>
+            <strong>Segment Tree:</strong>
+            <p><strong>Principle:</strong> A tree-like data structure that divides the array into smaller parts (segments) and stores information about them. It can quickly answer range queries (like sum or minimum) and also update elements.</p>
+            <p><strong>Application:</strong> Used in problems involving arrays to answer range queries, such as in games or dynamic programming problems.</p>
+        </li>
+        <li>
+            <strong>Sparse Table:</strong>
+            <p><strong>Principle:</strong> Optimized for answering range queries where no updates are needed. It uses precomputation to quickly find minimums or maximums over a range.</p>
+            <p><strong>Application:</strong> Ideal for answering static range queries efficiently (e.g., finding the minimum or maximum over a range).</p>
+        </li>
+        <li>
+            <strong>Binary Indexed Tree (Fenwick Tree):</strong>
+            <p><strong>Principle:</strong> A binary tree structure that helps quickly compute prefix sums (sum of elements from the start of the array to a specific index) and update elements in the array.</p>
+            <p><strong>Application:</strong> Used in problems requiring efficient updates and prefix sum queries, like stock price tracking.</p>
+        </li>
+    </ul>
+</section>
+
     </main>
     <footer>
         <p>&copy; 2024 Shreyas Kulkarni. All rights reserved.</p>
