@@ -274,69 +274,57 @@
                 <li><strong>Union-Find (Disjoint Set Union)</strong>: Efficiently handles union and find operations in dynamic sets.</li>
             </ul>
         </section>    -->
-        <h1>Algorithm Design Techniques</h1>
+        <h1 style="color: blue;">Algorithm Design Techniques</h1>
 
-    <h2>1. Backtracking</h2>
-    <p>Incrementally build solutions and retract choices when constraints are violated.</p>
-    <p><strong>Strength:</strong> Suitable for problems that require exploring all possibilities with constraints.</p>
-    <p><strong>Examples of Algorithms:</strong></p>
-    <ul>
-        <li><strong>N-Queens Problem:</strong> Place queens on a chessboard avoiding conflicts.</li>
-        <li><strong>Sudoku Solver:</strong> Fill cells while adhering to Sudoku rules.</li>
-    </ul>
+<h2 style="color: purple;">1. Backtracking</h2>
+<ul>
+    <li><strong>Incrementally build solutions and retract choices when constraints are violated.</strong></li>
+    <li><strong>Strength:</strong> Suitable for problems that require exploring all possibilities with constraints.</li>
+    <li><strong>Examples of Algorithms:</strong>
+        <ul>
+            <li><strong>N-Queens Problem:</strong> Place queens on a chessboard avoiding conflicts.</li>
+            <li><strong>Sudoku Solver:</strong> Fill cells while adhering to Sudoku rules.</li>
+        </ul>
+    </li>
+</ul>
 
-    <h2>2. Divide and Conquer</h2>
-    <p>Break a problem into smaller subproblems, solve them independently, and combine their solutions.</p>
-    <p><strong>Strength:</strong> Efficient for problems with no overlapping subproblems and clear substructure.</p>
-    <p><strong>Examples of Algorithms:</strong></p>
-    <ul>
-        <li><strong>Binary Search:</strong> Recursively search in halves of a sorted array.</li>
-        <li><strong>Merge Sort:</strong> Recursively split and merge sorted arrays.</li>
-        <li><strong>Quick Sort:</strong> Partition around a pivot and sort subarrays recursively.</li>
-    </ul>
+<h2 style="color: purple;">2. Divide and Conquer</h2>
+<ul>
+    <li><strong>Break a problem into smaller subproblems, solve them independently, and combine their solutions.</strong></li>
+    <li><strong>Strength:</strong> Efficient for problems with no overlapping subproblems and clear substructure.</li>
+    <li><strong>Examples of Algorithms:</strong>
+        <ul>
+            <li><strong>Binary Search:</strong> Recursively search in halves of a sorted array.</li>
+            <li><strong>Merge Sort:</strong> Recursively split and merge sorted arrays.</li>
+            <li><strong>Quick Sort:</strong> Partition around a pivot and sort subarrays recursively.</li>
+        </ul>
+    </li>
+</ul>
 
-    <h2>3. Partitioning</h2>
-    <p>Divide data into segments or partitions to simplify solving the problem.</p>
-    <p><strong>Strength:</strong> Enables efficient division of input for sorting, clustering, or divide-and-conquer methods.</p>
-    <p><strong>Examples of Algorithms:</strong></p>
-    <ul>
-        <li><strong>Quick Sort Partitioning:</strong> Rearrange elements around a pivot.</li>
-    </ul>
+<h2 style="color: purple;">3. Partitioning</h2>
+<ul>
+    <li><strong>Divide data into segments or partitions to simplify solving the problem.</strong></li>
+    <li><strong>Strength:</strong> Enables efficient division of input for sorting, clustering, or divide-and-conquer methods.</li>
+    <li><strong>Examples of Algorithms:</strong>
+        <ul>
+            <li><strong>Quick Sort Partitioning:</strong> Rearrange elements around a pivot.</li>
+        </ul>
+    </li>
+</ul>
 
-    <h2>4. Greedy Algorithms</h2>
-    <p>Make locally optimal choices to aim for a globally optimal solution.</p>
-    <p><strong>Strength:</strong> Simple and fast when the greedy choice leads to an optimal solution.</p>
-    <p><strong>Examples of Algorithms:</strong></p>
-    <ul>
-        <li><strong>Kruskal's Algorithm:</strong> Add smallest edges to form a Minimum Spanning Tree.</li>
-        <li><strong>Dijkstra's Algorithm:</strong> Iteratively find shortest paths from a source.</li>
-        <li><strong>Huffman Coding:</strong> Build a binary tree for optimal data compression.</li>
-    </ul>
+<h2 style="color: purple;">4. Greedy Algorithms</h2>
+<ul>
+    <li><strong>Make locally optimal choices to aim for a globally optimal solution.</strong></li>
+    <li><strong>Strength:</strong> Simple and fast when the greedy choice leads to an optimal solution.</li>
+    <li><strong>Examples of Algorithms:</strong>
+        <ul>
+            <li><strong>Kruskal's Algorithm:</strong> Add smallest edges to form a Minimum Spanning Tree.</li>
+            <li><strong>Dijkstra's Algorithm:</strong> Iteratively find shortest paths from a source.</li>
+        </ul>
+    </li>
+</ul>
 
-    <h2>5. Array Query Algorithms</h2>
-    <p>Array query algorithms handle range queries and updates effectively by using efficient data structures:</p>
-    <ul>
-        <li>
-            <strong>Lookup Table</strong>
-            <p><strong>Principle:</strong> Precomputes answers for different inputs and stores them in a table. When queried, answers are retrieved in O(1) time using a 2D matrix.</p>
-            <p><strong>Application:</strong> Useful when we need to answer multiple queries very quickly after an initial precomputation (e.g., computing factorials).</p>
-        </li>
-        <li>
-            <strong>Segment Tree</strong>
-            <p><strong>Principle:</strong> A tree-like data structure that divides the array into smaller parts (segments) and stores information about them. It can quickly answer range queries (like sum or minimum) and also update elements.</p>
-            <p><strong>Application:</strong> Used in problems involving arrays to answer range queries, such as in games or dynamic programming problems.</p>
-        </li>
-        <li>
-            <strong>Sparse Table</strong>
-            <p><strong>Principle:</strong> Optimized for answering range queries where no updates are needed. It uses precomputation to quickly find minimums or maximums over a range.</p>
-            <p><strong>Application:</strong> Ideal for answering static range queries efficiently (e.g., finding the minimum or maximum over a range).</p>
-        </li>
-        <li>
-            <strong>Binary Indexed Tree (Fenwick Tree)</strong>
-            <p><strong>Principle:</strong> A binary tree structure that helps quickly compute prefix sums (sum of elements from the start of the array to a specific index) and update elements in the array.</p>
-            <p><strong>Application:</strong> Used in problems requiring efficient updates and prefix sum queries, like stock price tracking.</p>
-        </li>
-    </ul>
+        
     </main>
     <footer>
         <p>&copy; 2024 Shreyas Kulkarni. All rights reserved.</p>
