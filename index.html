@@ -256,7 +256,7 @@
             </ul>
         </section>
 
-        <section id="graph">
+        <!--  <section id="graph">
             <h2>Graph Algorithms</h2>
             <ul>
                 <li><strong>Depth-First Search (DFS)</strong>: Traverses a graph deeply before backtracking.</li>
@@ -273,7 +273,45 @@
             <ul>
                 <li><strong>Union-Find (Disjoint Set Union)</strong>: Efficiently handles union and find operations in dynamic sets.</li>
             </ul>
-        </section>
+        </section>    -->
+        <h1>Algorithm Design Techniques</h1>
+
+        <h2>1. Backtracking</h2>
+        <p>Incrementally build solutions and retract choices when constraints are violated.</p>
+        <p><strong>Strength:</strong> Suitable for problems that require exploring all possibilities with constraints.</p>
+        <p><strong>Examples of Algorithms:</strong></p>
+        <ul>
+            <li><strong>N-Queens Problem:</strong> Place queens on a chessboard avoiding conflicts.</li>
+            <li><strong>Sudoku Solver:</strong> Fill cells while adhering to Sudoku rules.</li>
+        </ul>
+    
+        <h2>2. Divide and Conquer</h2>
+        <p>Break a problem into smaller subproblems, solve them independently, and combine their solutions.</p>
+        <p><strong>Strength:</strong> Efficient for problems with no overlapping subproblems and clear substructure.</p>
+        <p><strong>Examples of Algorithms:</strong></p>
+        <ul>
+            <li><strong>Binary Search:</strong> Recursively search in halves of a sorted array.</li>
+            <li><strong>Merge Sort:</strong> Recursively split and merge sorted arrays.</li>
+            <li><strong>Quick Sort:</strong> Partition around a pivot and sort subarrays recursively.</li>
+        </ul>
+    
+        <h2>3. Partitioning</h2>
+        <p>Divide data into segments or partitions to simplify solving the problem.</p>
+        <p><strong>Strength:</strong> Enables efficient division of input for sorting, clustering, or divide-and-conquer methods.</p>
+        <p><strong>Examples of Algorithms:</strong></p>
+        <ul>
+            <li><strong>Quick Sort Partitioning:</strong> Rearrange elements around a pivot.</li>
+        </ul>
+    
+        <h2>4. Greedy Algorithms</h2>
+        <p>Make locally optimal choices to aim for a globally optimal solution.</p>
+        <p><strong>Strength:</strong> Simple and fast when the greedy choice leads to an optimal solution.</p>
+        <p><strong>Examples of Algorithms:</strong></p>
+        <ul>
+            <li><strong>Kruskal's Algorithm:</strong> Add smallest edges to form a Minimum Spanning Tree.</li>
+            <li><strong>Dijkstra's Algorithm:</strong> Iteratively find shortest paths from a source.</li>
+            <li><strong>Huffman Coding:</strong> Build a binary tree for optimal data compression.</li>
+        </ul>
 
     </main>
     <footer>
