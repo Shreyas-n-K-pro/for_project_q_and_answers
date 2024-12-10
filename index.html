@@ -372,40 +372,14 @@
     <p>When choosing between different approaches to solve a problem, it's essential to evaluate the trade-offs based on time, space, and implementation ease. Here’s an example with trees and range queries:</p>
     
     <ul>
-        <li><strong>Time Complexity:</strong> 
-            <ul>
-                <li>DFS can be faster for deep trees but uses more memory for the stack.</li>
-                <li>BFS is slower but more memory-efficient for shallow trees.</li>
-                <li>For range queries, <strong>Segment Trees</strong> optimize queries to O(log n) but require additional preprocessing.</li>
-            </ul>
-        </li>
-        <li><strong>Space Complexity:</strong>
-            <ul>
-                <li>DFS (recursive) uses less space but may cause stack overflow with deep trees.</li>
-                <li>BFS requires more space (queue) but avoids stack overflow.</li>
-                <li>Segment Trees use O(n) space but allow O(log n) query time for range queries.</li>
-            </ul>
-        </li>
-        <li><strong>Implementation Complexity:</strong>
-            <ul>
-                <li>DFS is easier to implement for tree traversal.</li>
-                <li>Segment Trees are more complex but provide efficient solutions for range queries.</li>
-            </ul>
-        </li>
-        <li><strong>Scalability:</strong>
-            <ul>
-                <li>DFS is fine for smaller, unbalanced trees but struggles with deep trees.</li>
-                <li>Segment Trees scale well for range queries in large datasets.</li>
-            </ul>
-        </li>
-        <li><strong>Specific Use Cases:</strong>
-            <ul>
-                <li>DFS is ideal for post-order traversal and subtree evaluations.</li>
-                <li>Segment Trees are optimal for efficiently handling range queries (e.g., sum or max in a range).</li>
-            </ul>
-        </li>
+        <li><strong>Time Complexity:</strong> DFS can be faster for deep trees but uses more memory for the stack. BFS is slower but more memory-efficient for shallow trees. For range queries, <strong>Segment Trees</strong> optimize queries to O(log n) but require additional preprocessing.</li>
+        <li><strong>Space Complexity:</strong> DFS (recursive) uses less space but may cause stack overflow with deep trees. BFS requires more space (queue) but avoids stack overflow. Segment Trees use O(n) space but allow O(log n) query time for range queries.</li>
+        <li><strong>Implementation Complexity:</strong> DFS is easier to implement for tree traversal. Segment Trees are more complex but provide efficient solutions for range queries.</li>
+        <li><strong>Scalability:</strong> DFS is fine for smaller, unbalanced trees but struggles with deep trees. Segment Trees scale well for range queries in large datasets.</li>
+        <li><strong>Specific Use Cases:</strong> DFS is ideal for post-order traversal and subtree evaluations. Segment Trees are optimal for efficiently handling range queries (e.g., sum or max in a range).</li>
     </ul>
 </section>
+
 
     </main>
     <footer>
