@@ -110,6 +110,44 @@ pre {
     border-left: 5px solid #2575fc;
 }
 
+/* Styles for Problem-Solving Section */
+#problem-solving {
+    margin-bottom: 3rem;
+    animation: fadeIn 1s ease-out;
+}
+
+#problem-solving h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 1rem;
+    border-left: 5px solid #6a11cb;
+    padding-left: 10px;
+}
+
+#problem-solving p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#problem-solving ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#problem-solving ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+#problem-solving ul li::before {
+    content: '➤';
+    margin-right: 10px;
+    color: #6a11cb;
+    font-size: 1.2rem;
+}
+
 footer {
     background: #333;
     color: white;
