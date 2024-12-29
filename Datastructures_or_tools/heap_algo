@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+void heapify(int H[], int n, int i) 
+{
+    int K = i;
+    int V = H[i];
+    bool heap = false;
+
+    while (!heap && 2 * K <= n) 
+    {
+        int j = 2 * K;
+
+        if (j < n && H[j] < H[j + 1]) 
+        {
+            j++;
+        }
+
+        if (V >= H[j]) 
+        {
+            heap = true;
+        } 
+        else 
+        {
+            H[K] = H[j];
+            K = j;
+        }
+    }
+
+    H[K] = V;
+}
+
+void printHeap(int H[], int n) 
+{
+    for (int i = 1; i <= n; i++) 
+    {
+        cout << H[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() 
+{
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    int H[n + 1];
+    cout << "Enter the elements: ";
+    for (int i = 1; i <= n; i++) 
+    {
+        cin >> H[i];
+    }
+
+    for (int i = n / 2; i >= 1; i--) 
+    {
+        heapify(H, n, i);
+    }
+
+    cout << "Heap after heapify: ";
+    printHeap(H, n);
+
+    return 0;
+}
+
